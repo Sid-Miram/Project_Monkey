@@ -1,0 +1,130 @@
+body{
+    font-family: 'Anek Malayalam', sans-serif;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Container1{
+    border: 2px solid rgb(8, 140, 197);
+    box-shadow: 50px;
+    background-color: #c6d1e0 ;
+    height: 45vh;
+    width: 45vw;
+    /* margin: 100px 200px 100px 200px; */
+    opacity: 0.75;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 0px 3px;
+}
+
+.Container2{
+    border: 2px solid rgb(8, 140, 197);
+    box-shadow: 50px;
+    background-color: #c6d1e0 ;
+    height: 33vh;
+    width: 45vw;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.90;
+
+}
+#darLiButton{
+    position: absolute;
+    top: 27.8vh;
+    right: 26vw;
+    height: 3vh;
+    width: 4vw;
+    padding: 3px;
+    border: 2px solid rgb(8, 140, 197);
+    box-shadow: 50px;
+    background-color: #c6d1e0 ;
+    opacity: 0.75;
+    border-radius: 10px;
+    color:rgb(9, 104, 120);
+    font-weight: 900;
+    letter-spacing: 1px;
+    /* color: rgb(9, 104, 120); */
+}
+
+li{
+    border: 1px solid rgba(109, 106, 106, 0.493);
+    border-radius: 3px;
+    margin: 4px;
+    list-style-type:none;
+    margin: 4px 4px 4px 4px;
+    height: 3vw;
+    font-weight: 600;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    
+}
+
+#correctAnswers,#precision{
+    color: rgb(21, 187, 21);
+}
+#result{
+    margin-top: -1vw;
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1vw;
+
+}
+li:hover{
+    background-color: rgba(14, 162, 226, 0.5);
+}
+#currentQuestion{
+    color:#800080;
+    font-size : 32px;
+    font-weight: 500;
+}
+#totalQuestions{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+#comment{
+    margin-top: -1vw;
+    margin-bottom: 8vh;
+}
+.highlighters{
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+#high, #rHigh{
+    border: 2px solid rgb(8, 140, 197);
+    box-shadow: 50px;
+    background-color: #c6d1e0 ;
+    opacity: 0.75;
+    border-radius: 10px;
+    color:rgb(9, 104, 120);
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 3px;
+     
+}
+#rHigh:hover{
+    background-color: rgba(14, 162, 226, 0.5);
+}
+#high:hover{
+    background-color: rgba(14, 162, 226, 0.5);
+}
+#darLiButton:hover{
+    background-color: rgba(14, 162, 226, 0.5);
+}
+
+
+
