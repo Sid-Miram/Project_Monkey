@@ -10,7 +10,7 @@ const [highlighted, setHighlighted] = useState(false)
 const {text, options} = questions[currentQuestion]
 
 const updateHandler = function(isCorrect){
-  if(isCorrect == true){
+  if(isCorrect === true){
     setCorrectAnswers((prev)=> prev+1)
     
   }
@@ -18,22 +18,28 @@ const updateHandler = function(isCorrect){
   
 }
 let highlightHandler = function(){
-  if(highlighted == false){
+  if(highlighted ===false){
     setHighlighted((prev)=> prev = true)
+    new Notification("Highlighter Applied")
   }else{
-    alert("Already Highlightere Applied")
+    new Notification("Already Highlighter Applied", {
+      body: "Andha Hai Kya Bhai?!!"
+    })
   }
 }
 
 let rHighlightHandler = function(){
-  if(highlighted ==true){
+  if(highlighted ===true){
   setHighlighted((prev)=> prev = false)
+  new Notification("Highlighter Removed")
   }else{
-    alert("Already Highlightere Removed")
+    new Notification("Already Highlighter Removed",{
+      body: "Andha Hai Kya Bhai?!!"
+    })
   }
 } 
 
-if(currentQuestion==length-1){
+if(currentQuestion===length-1){
   return(<Result answer = {correctAnswers}/>)
 }
 
