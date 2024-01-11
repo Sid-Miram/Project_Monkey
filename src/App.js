@@ -18,6 +18,12 @@ function App() {
       : 'black'
   }, [andheraKayamRahega]);
 
+  useEffect(()=>{
+    window.onload = function(){
+      Notification.requestPermission()
+    }
+  },[])
+
   let modeChanger = function () {
     setAndheraKayamRahega((prev) => !prev);
     setShaktiman((prev) => (prev === "Dark" ? "Light" : "Dark"));
